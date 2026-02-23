@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>店舗ページ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <div class="logo" data-f="name"></div>
+      <nav class="nav">
+        <a href="#top">トップ</a>
+        <a href="#services">サービス</a>
+        <a href="#plan">料金</a>
+        <a href="#access">アクセス</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="inner hero-inner">
+        <div class="hero-text">
+          <p class="hero-copy" data-f="copy"></p>
+          <p class="hero-hours" data-f="hours"></p>
+          <p class="hero-tel" data-f="tel"></p>
+          <a href="#contact" class="btn-main">お問い合わせ</a>
+        </div>
+        <div class="hero-img">
+          <img data-img="main" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="inner">
+        <h2 class="sec-title">サービス</h2>
+        <div class="svc-list" data-list="svc"></div>
+      </div>
+    </section>
+
+    <section id="plan" class="section section-alt">
+      <div class="inner">
+        <h2 class="sec-title">料金プラン</h2>
+        <table class="plan-table">
+          <tbody data-list="plan"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="access" class="section">
+      <div class="inner access-inner">
+        <div class="access-info">
+          <h2 class="sec-title">アクセス</h2>
+          <p data-f="addr"></p>
+          <p data-f="hours"></p>
+          <p data-f="tel"></p>
+        </div>
+        <div class="access-imgs">
+          <img data-img="in" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="inner">
+        <h2 class="sec-title">お問い合わせ</h2>
+        <form class="contact-form">
+          <div class="form-row">
+            <label>お名前</label>
+            <input type="text" name="name">
+          </div>
+          <div class="form-row">
+            <label>メールアドレス</label>
+            <input type="email" name="email">
+          </div>
+          <div class="form-row">
+            <label>お問い合わせ内容</label>
+            <textarea name="msg" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn-main">送信する</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <small>&copy; <span data-f="name"></span></small>
+    </div>
+  </footer>
+</body>
+</html>
+
